@@ -14,7 +14,7 @@ Or step by step:
 
 ```bash
 make preprocess   # download MNIST, print dataset stats, save sample grid
-make train        # train MPNP for 100 epochs (use train-quick for 20)
+make train        # train MPNP for 150 epochs (use train-quick for 20)
 make postprocess  # generate inpainting comparison figures
 ```
 
@@ -35,7 +35,7 @@ The model reconstructs digit structure from sparse context and concentrates unce
 ## Usage
 
 ```bash
-uv run train_inpainting.py --epochs 100 --lr 5e-4 --seed 42
+uv run train_inpainting.py --epochs 150 --lr 5e-4 --seed 42
 uv run postprocess.py --num_context 100 --num_samples 30 --num_images 10
 ```
 
